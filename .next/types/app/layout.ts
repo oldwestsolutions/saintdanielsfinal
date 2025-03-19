@@ -1,4 +1,4 @@
-// File: /Users/imacuser/Desktop/saintdanielsfinal/saintdanielsfinal/src/app/layout.jsx
+// File: /Users/imacuser/Desktop/saintdanielsfinal/saintdanielsfinal-1/src/app/layout.jsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

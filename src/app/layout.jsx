@@ -1,5 +1,6 @@
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
