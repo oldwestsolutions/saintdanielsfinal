@@ -1,9 +1,173 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 :root {
-  --royal-green: #2B4C35;
-  --royal-gold: #C4A962;
-  --text-gold: #C4A962;
+  --forest-green: #1B3B21;
+  --gold: #B4975A;
+  --beige: #E5E2D9;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--forest-green);
+  border-bottom: 1px solid var(--gold);
+  padding: 1rem 0;
+}
+
+.navbar .btn {
+  background-color: var(--gold);
+  color: var(--forest-green);
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #c4a76a;
+  color: var(--forest-green);
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--forest-green);
+  color: white;
+  padding: 5rem 0;
+}
+
+.hero-title {
+  color: var(--gold);
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.join-btn {
+  background-color: var(--gold);
+  color: var(--forest-green);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #c4a76a;
+  color: var(--forest-green);
+}
+
+/* Hover card effect */
+.hover-card {
+  transition: transform 0.3s ease;
+  background: white;
+  border-radius: 12px;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Process number styling */
+.process-number {
+  width: 80px;
+  height: 80px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--forest-green);
+  font-weight: bold;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Process card styling */
+.process-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Treasure card styling */
+.treasure-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.treasure-card:hover {
+  transform: translateY(-5px);
+}
+
+.treasure-icon {
+  font-size: 3rem;
+  color: var(--gold);
+  text-align: center;
+}
+
+.points-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--forest-green);
+  color: var(--gold);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Benefit icon styling */
+.benefit-icon {
+  background: rgba(27, 59, 33, 0.05);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+/* Button hover effects */
+.btn:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Card shadows */
+.shadow-custom {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+  }
 }
 
 .bg-success {
@@ -160,10 +324,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Join Kingdom Section */
 .join-kingdom-section {
-  background-color: var(--royal-green);
+  background-color: var(--forest-green);
   padding: 80px 0;
   text-align: center;
-  border-top: 1px solid #3c5c45;
+  border-top: 1px solid var(--gold);
 }
 
 .kingdom-title {
@@ -184,22 +348,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .begin-journey-btn {
-  background-color: var(--royal-gold);
-  color: var(--royal-green);
+  background-color: var(--gold);
+  color: var(--forest-green);
   padding: 16px 32px;
   font-size: 18px;
   border-radius: 50px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.begin-journey-btn:hover {
+  background-color: #c4a76a;
+  color: var(--forest-green);
+  transform: translateY(-2px);
 }
 
 /* Footer Styles */
 .main-footer {
-  background-color: var(--royal-green);
+  background-color: var(--forest-green);
+  color: white;
   padding: 60px 0 30px;
-  color: var(--royal-gold);
-  border-top: 1px solid #3c5c45;
+  border-top: 1px solid var(--gold);
 }
 
 .footer-top {

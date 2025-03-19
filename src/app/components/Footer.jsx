@@ -31,11 +31,23 @@ export default function Footer() {
                   height={64}
                   priority
                   unoptimized
+                  style={{
+                    filter: 'brightness(0) saturate(100%) invert(70%) sepia(11%) saturate(1091%) hue-rotate(358deg) brightness(89%) contrast(85%)'
+                  }}
                   onError={(e) => {
                     console.error('Image failed to load:', e);
                   }}
                 />
-                <h3 className="footer-brand-text">SAINT DANIELS</h3>
+                <h3 style={{ 
+                  color: '#B4975A',
+                  fontFamily: 'Crimson Text, serif',
+                  fontSize: '1.75rem',
+                  fontWeight: '500',
+                  letterSpacing: '1.5px',
+                  margin: 0
+                }}>
+                  SAINT DANIELS
+                </h3>
               </div>
               <div className="social-links">
                 <a href="#" className="social-btn">FB</a>
