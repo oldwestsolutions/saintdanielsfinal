@@ -1,0 +1,314 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --royal-green: #2B4C35;
+  --royal-gold: #C4A962;
+  --text-gold: #C4A962;
+}
+
+.bg-success {
+  background-color: var(--royal-green) !important;
+}
+
+.btn-warning {
+  background-color: var(--royal-gold);
+  border-color: var(--royal-gold);
+}
+
+.btn-warning:hover {
+  background-color: #c0aa89;
+  border-color: #c0aa89;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add custom fonts if needed */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Add any custom styles below */
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.brand-text {
+  color: var(--text-gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+.login-btn {
+  background-color: var(--royal-gold);
+  color: #2B4C35;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: #b39855;
+  color: #2B4C35;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+  color: var(--royal-gold) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--royal-gold);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(210, 188, 155, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-color: var(--royal-green);
+  padding: 80px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding-left: 48px;
+}
+
+.hero-title {
+  color: var(--text-gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.hero-text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.join-btn {
+  background-color: var(--royal-gold);
+  color: #2B4C35;
+  padding: 12px 32px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.join-btn:hover {
+  background-color: #b39855;
+  color: #2B4C35;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .image-placeholder {
+    height: 300px;
+  }
+}
+
+/* Join Kingdom Section */
+.join-kingdom-section {
+  background-color: var(--royal-green);
+  padding: 80px 0;
+  text-align: center;
+  border-top: 1px solid #3c5c45;
+}
+
+.kingdom-title {
+  color: var(--royal-gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.kingdom-text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.begin-journey-btn {
+  background-color: var(--royal-gold);
+  color: var(--royal-green);
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Styles */
+.main-footer {
+  background-color: var(--royal-green);
+  padding: 60px 0 30px;
+  color: var(--royal-gold);
+  border-top: 1px solid #3c5c45;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.footer-brand-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-brand-text {
+  color: var(--royal-gold);
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h4 {
+  color: var(--royal-gold);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-column ul li a:hover {
+  color: var(--royal-gold);
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-btn {
+  background-color: var(--royal-gold);
+  color: var(--royal-green);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.social-btn:hover {
+  background-color: #b39855;
+  color: var(--royal-green);
+}
+
+.footer-copyright {
+  text-align: center;
+  color: var(--royal-gold);
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand-section {
+    align-items: center;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+} 
