@@ -482,4 +482,40 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 40px;
   }
+}
+
+/* Newsletter Page Styles */
+.newsletter-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.newsletter-input:focus {
+  border-color: #B4975A;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(180, 151, 90, 0.2);
+}
+
+.newsletter-btn {
+  background-color: #B4975A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #a38649;
+  transform: translateY(-2px);
 } 

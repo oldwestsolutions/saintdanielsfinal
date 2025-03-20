@@ -2,5 +2,6 @@
   "/not-found": "app/not-found.js",
   "/page": "app/page.js",
   "/login/page": "app/login/page.js",
-  "/enrollment/page": "app/enrollment/page.js"
+  "/enrollment/page": "app/enrollment/page.js",
+  "/newsletter/page": "app/newsletter/page.js"
 }

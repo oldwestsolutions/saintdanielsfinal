@@ -9,7 +9,15 @@ export default function Footer() {
       {/* Join Kingdom Section */}
       <section className="join-kingdom-section">
         <div className="container text-center">
-          <h2 className="kingdom-title">JOIN THE HEALTHCARE KINGDOM</h2>
+          <h2 className="kingdom-title" style={{ 
+            color: '#B4975A',
+            fontSize: '2.5rem',
+            fontWeight: '600',
+            marginBottom: '1.5rem',
+            fontFamily: 'Crimson Text, serif'
+          }}>
+            JOIN THE HEALTHCARE KINGDOM
+          </h2>
           <p className="kingdom-text">
             Take control of your healthcare journey with rewards fit for royalty. Sign up today and begin earning points<br />
             towards a healthier, more rewarding future.
@@ -34,9 +42,6 @@ export default function Footer() {
                   style={{
                     filter: 'brightness(0) saturate(100%) invert(70%) sepia(11%) saturate(1091%) hue-rotate(358deg) brightness(89%) contrast(85%)'
                   }}
-                  onError={(e) => {
-                    console.error('Image failed to load:', e);
-                  }}
                 />
                 <h3 style={{ 
                   color: '#B4975A',
@@ -60,16 +65,28 @@ export default function Footer() {
 
             <div className="footer-links">
               <div className="footer-column">
-                <h4>MEMBERS</h4>
+                <h4 style={{ 
+                  color: '#B4975A',
+                  fontFamily: 'Crimson Text, serif',
+                  fontSize: '1.25rem',
+                  fontWeight: '600',
+                  marginBottom: '1.25rem'
+                }}>MEMBERS</h4>
                 <ul>
-                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="/newsletter">Newsletter</a></li>
                   <li><a href="#">Partners</a></li>
                   <li><a href="#">Help Center</a></li>
                 </ul>
               </div>
 
               <div className="footer-column">
-                <h4>RESOURCES</h4>
+                <h4 style={{ 
+                  color: '#B4975A',
+                  fontFamily: 'Crimson Text, serif',
+                  fontSize: '1.25rem',
+                  fontWeight: '600',
+                  marginBottom: '1.25rem'
+                }}>RESOURCES</h4>
                 <ul>
                   <li><a href="#">Documents</a></li>
                   <li><a href="#">Privacy Policy</a></li>
@@ -78,7 +95,13 @@ export default function Footer() {
               </div>
 
               <div className="footer-column">
-                <h4>COMPANY</h4>
+                <h4 style={{ 
+                  color: '#B4975A',
+                  fontFamily: 'Crimson Text, serif',
+                  fontSize: '1.25rem',
+                  fontWeight: '600',
+                  marginBottom: '1.25rem'
+                }}>COMPANY</h4>
                 <ul>
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Contact</a></li>
@@ -88,7 +111,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-copyright">
-            © 2023 Saint Daniels. All rights reserved.
+            © {new Date().getFullYear()} Saint Daniels. All rights reserved.
           </div>
         </div>
       </footer>

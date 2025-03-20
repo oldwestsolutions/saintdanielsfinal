@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   const linkStyle = {
     color: 'white',
@@ -20,69 +22,73 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ 
-      backgroundColor: '#1B3B21',
-      borderTop: '1px solid #B4975A',
-      padding: '3rem 0 2rem',
-      color: 'white',
-      position: 'relative',
-      zIndex: 1
-    }}>
+    <footer className="main-footer">
       <div className="container">
-        <div className="row g-4">
-          <div className="col-md-3">
-            <h5 style={headingStyle}>SAINT DANIELS</h5>
-            <p style={{ 
-              fontSize: '0.9rem',
-              lineHeight: '1.6',
-              marginBottom: '1rem',
-              color: 'rgba(255,255,255,0.9)'
-            }}>
-              Royal healthcare solutions, ensuring quality care and exclusive benefits for our members.
-            </p>
-          </div>
-          
-          <div className="col-md-3">
-            <h5 style={headingStyle}>MEMBERS</h5>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li><a href="/enrollment" style={linkStyle}>Enrollment</a></li>
-              <li><a href="/login" style={linkStyle}>Login</a></li>
-              <li><a href="#" style={linkStyle}>Benefits</a></li>
-              <li><a href="#" style={linkStyle}>Contact</a></li>
-            </ul>
-          </div>
-
-          <div className="col-md-3">
-            <h5 style={headingStyle}>RESOURCES</h5>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li><a href="#" style={linkStyle}>FAQs</a></li>
-              <li><a href="#" style={linkStyle}>Support</a></li>
-              <li><a href="#" style={linkStyle}>Terms</a></li>
-              <li><a href="#" style={linkStyle}>Privacy</a></li>
-            </ul>
+        <div className="footer-top">
+          <div className="footer-brand-section">
+            <div className="footer-brand">
+              <Image 
+                src="/saintdanielslogo.png" 
+                alt="Saint Daniels Logo" 
+                width={64}
+                height={64}
+                priority
+                unoptimized
+                style={{
+                  filter: 'brightness(0) saturate(100%) invert(70%) sepia(11%) saturate(1091%) hue-rotate(358deg) brightness(89%) contrast(85%)'
+                }}
+              />
+              <h3 style={headingStyle}>SAINT DANIELS</h3>
+            </div>
+            <div className="social-links">
+              <a href="#" className="social-btn">FB</a>
+              <a href="#" className="social-btn">IN</a>
+              <a href="#" className="social-btn">SC</a>
+              <a href="#" className="social-btn">TT</a>
+              <a href="#" className="social-btn">IG</a>
+            </div>
           </div>
 
-          <div className="col-md-3">
-            <h5 style={headingStyle}>COMPANY</h5>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li><a href="#" style={linkStyle}>About Us</a></li>
-              <li><a href="#" style={linkStyle}>Careers</a></li>
-              <li><a href="#" style={linkStyle}>News</a></li>
-              <li><a href="#" style={linkStyle}>Partners</a></li>
-            </ul>
+          <div className="footer-links">
+            <div className="footer-column">
+              <h4 style={{ ...headingStyle, color: '#B4975A' }}>MEMBERS</h4>
+              <ul>
+                <li><a href="/enrollment" style={linkStyle}>Enrollment</a></li>
+                <li><a href="/login" style={linkStyle}>Login</a></li>
+                <li><a href="#" style={linkStyle}>Benefits</a></li>
+                <li><a href="#" style={linkStyle}>Contact</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h4 style={{ ...headingStyle, color: '#B4975A' }}>RESOURCES</h4>
+              <ul>
+                <li><a href="#" style={linkStyle}>FAQs</a></li>
+                <li><a href="#" style={linkStyle}>Support</a></li>
+                <li><a href="/newsletter" style={linkStyle}>Newsletter</a></li>
+                <li><a href="#" style={linkStyle}>Privacy</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h4 style={{ ...headingStyle, color: '#B4975A' }}>COMPANY</h4>
+              <ul>
+                <li><a href="#" style={linkStyle}>About Us</a></li>
+                <li><a href="#" style={linkStyle}>Careers</a></li>
+                <li><a href="#" style={linkStyle}>News</a></li>
+                <li><a href="#" style={linkStyle}>Partners</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        
-        <div className="row mt-5">
-          <div className="col-12 text-center">
-            <p style={{ 
-              fontSize: '0.8rem',
-              color: '#B4975A',
-              margin: 0
-            }}>
-              © {new Date().getFullYear()} Saint Daniels. All rights reserved.
-            </p>
-          </div>
+
+        <div className="footer-copyright" style={{ 
+          textAlign: 'center',
+          color: '#B4975A',
+          fontSize: '0.8rem',
+          marginTop: '2rem'
+        }}>
+          © {new Date().getFullYear()} Saint Daniels. All rights reserved.
         </div>
       </div>
     </footer>
